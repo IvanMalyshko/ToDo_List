@@ -24,6 +24,6 @@ urlpatterns = [
     path('singup', views.singupuser, name='singupuser'),
 
     # todos
-    path('current', views.currenttodos, name='currenttodos'),
+    path('current/', views.currenttodos, name='currenttodos'),
 
 ]
