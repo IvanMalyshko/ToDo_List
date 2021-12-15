@@ -22,6 +22,7 @@ urlpatterns = [
 
     # auth
     path('singup', views.singupuser, name='singupuser'),
+    path('login', views.loginuser, name='loginuser'),
     path('logout', views.logoutuser, name='logoutuser'),
 
     # todos

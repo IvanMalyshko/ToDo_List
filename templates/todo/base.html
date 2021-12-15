@@ -9,8 +9,8 @@ Logged In as {{ user.username }}
 </form>
 
 {% else %}
-<a href="#">Sing Up</a>
-<a href="#">Login</a>
+<a href="{% url 'singupuser' %}">Sing Up</a>
+<a href="{% url 'loginuser' %}">Login</a>
 
 {% endif %}
 <br>
