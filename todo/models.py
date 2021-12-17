@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 class Todo(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField(blank=True)
-    created = models.DateTimeField(auto_now_add=True) # автоустановка даты/времени создания туду
+    created = models.DateTimeField(auto_now_add=True) # автоустановка даты/времени создания туду нельзя изменить
     deadline = models.DateTimeField(null=True, blank=True)
     datecompleted = models.DateTimeField(null=True, blank=True)
     important = models.BooleanField(default=False)
